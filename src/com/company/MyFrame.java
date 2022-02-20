@@ -10,7 +10,11 @@ public class MyFrame {
     private JFrame frame;
     private JButton button;
     private Random rand;
-    private Color color;
+    private Color color = Color.GREEN;
+
+    public MyFrame() {
+        startFrame();
+    }
 
     public class Panel extends JPanel {
         public void paintComponent(Graphics g) {
